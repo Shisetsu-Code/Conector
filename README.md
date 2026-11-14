@@ -8,9 +8,13 @@ El repositorio se organiza por proveedor. **Red Tiger** es el primer módulo; ca
 Conector/
 ├── providers/
 │   ├── README.md                  # Contrato común y reglas por proveedor
-│   └── redtiger/
+│   ├── redtiger/
 │       ├── session_selector.py    # Asociación offline ronda → bootstrap
 │       ├── README.md              # Estado, uso y límites
+│       └── tests/
+│   └── belatra/
+│       ├── har_contract.py
+│       ├── README.md
 │       └── tests/
 │           └── test_session_selector.py
 ├── docs/
@@ -23,6 +27,7 @@ Conector/
 
 | Proveedor | Módulo | Cobertura |
 |---|---|---|
+| Belatra | `providers/belatra` | Contrato de transporte demo y continuidad de sesión verificados offline; 9 intercambios `/game` observados, aún opacos |
 | Red Tiger | `providers/redtiger` | Asociación de sesiones y rondas offline; launcher HTTP autónomo **no validado** |
 
 ### Pruebas locales
