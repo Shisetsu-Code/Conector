@@ -22,3 +22,8 @@ providers/<slug>/
 ```
 
 El *selector offline* de Red Tiger es un componente de validación, no un launcher operativo. No tiene red y debe integrarse más tarde con el reconciliador nativo. Preferir Rust para nuevos ejecutores cuando aporte valor, manteniendo las interfaces específicas de cada proveedor explícitas.
+
+## Proveedores implementados
+
+- [Belatra](belatra/README.md): validador offline de HAR, sin ejecución remota.
+- [Red Tiger](redtiger/README.md): selector offline de identidad por ronda, sin ejecución remota.
