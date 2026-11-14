@@ -1,0 +1,32 @@
+# Never commit observed or authenticated session material
+*.har
+*.har.gz
+*.pcap
+*.pcapng
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.jsonl
+.env
+.env.*
+**/private/
+**/captures/
+**/sessions/
+**/profiles/
+**/credentials.*
+**/secrets.*
+**/cookies.*
+**/auth-*.json
+**/*-session.json
+
+# Local build and test state
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+target/
+.DS_Store
+.idea/
+.vscode/
